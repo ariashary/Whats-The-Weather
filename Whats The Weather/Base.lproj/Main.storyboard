@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Gdv-xI-Rw7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="-44" y="0.0" width="502" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's The Weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At3-i6-edw">
                                 <rect key="frame" x="68" y="94" width="278" height="36"/>
@@ -41,35 +41,35 @@
                                     <action selector="getWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GE1-zG-1oZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otb-KQ-Tm9">
-                                <rect key="frame" x="20" y="321" width="374" height="151"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otb-KQ-Tm9">
+                                <rect key="frame" x="20" y="321" width="374" height="121"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="GCD-CG-ME1"/>
-                                    <constraint firstAttribute="height" constant="151" id="j2o-YT-Dln"/>
+                                    <constraint firstAttribute="height" constant="121" id="j2o-YT-Dln"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. London, San Francisco" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fs-MG-pUd">
                                 <rect key="frame" x="20" y="217" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="otb-KQ-Tm9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3Sf-tk-ddA"/>
                             <constraint firstItem="J4K-fq-8p9" firstAttribute="top" secondItem="At3-i6-edw" secondAttribute="bottom" constant="30" id="8lj-Hy-b4y"/>
                             <constraint firstItem="At3-i6-edw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bmn-HJ-7Ux"/>
-                            <constraint firstItem="Gdv-xI-Rw7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CYr-LH-T7S"/>
+                            <constraint firstItem="Gdv-xI-Rw7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-44" id="CYr-LH-T7S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9fs-MG-pUd" secondAttribute="trailing" constant="20" id="MOn-lm-623"/>
                             <constraint firstItem="otb-KQ-Tm9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QQE-yG-txP"/>
                             <constraint firstItem="otb-KQ-Tm9" firstAttribute="top" secondItem="RJj-mV-9WF" secondAttribute="bottom" constant="8" id="ReQ-Zn-6cs"/>
                             <constraint firstItem="J4K-fq-8p9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wte-Hu-nD3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="otb-KQ-Tm9" secondAttribute="trailing" constant="20" id="Z6D-i8-2Ks"/>
                             <constraint firstItem="RJj-mV-9WF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="diI-DC-as5"/>
                             <constraint firstItem="9fs-MG-pUd" firstAttribute="top" secondItem="J4K-fq-8p9" secondAttribute="bottom" constant="30" id="doT-3e-Bix"/>
-                            <constraint firstItem="Gdv-xI-Rw7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fqF-6Q-BAO"/>
+                            <constraint firstItem="Gdv-xI-Rw7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="44" id="fqF-6Q-BAO"/>
                             <constraint firstItem="Gdv-xI-Rw7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="gN0-ot-4mf"/>
                             <constraint firstAttribute="bottom" secondItem="Gdv-xI-Rw7" secondAttribute="bottom" id="kHo-I3-Cyq"/>
                             <constraint firstItem="RJj-mV-9WF" firstAttribute="top" secondItem="9fs-MG-pUd" secondAttribute="bottom" constant="30" id="lrj-lM-4K8"/>
@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+            <point key="canvasLocation" x="136.23188405797103" y="108.48214285714285"/>
         </scene>
     </scenes>
     <resources>
